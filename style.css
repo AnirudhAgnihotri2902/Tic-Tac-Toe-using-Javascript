@@ -81,7 +81,6 @@ body{
 .select-box .credit a:hover{
   text-decoration: underline;
 }
-
 .play-board{
   opacity: 0;
   pointer-events: none;
@@ -166,7 +165,6 @@ body{
   border-radius: 5px;
   background: #fff;
 }
-
 .result-box{
   padding: 25px 20px;
   border-radius: 5px;
