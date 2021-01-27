@@ -14,7 +14,6 @@ window.onload = ()=>{ //once window loaded
        allBox[i].setAttribute("onclick", "clickedBox(this)");
     }
 }
-
 selectBtnX.onclick = ()=>{
     selectBox.classList.add("hide"); 
     playBoard.classList.add("show");
@@ -23,12 +22,10 @@ selectBtnO.onclick = ()=>{
     selectBox.classList.add("hide"); 
     playBoard.classList.add("show"); 
     players.setAttribute("class", "players active player"); 
-
 let playerXIcon = "fas fa-times"; 
 let playerOIcon = "far fa-circle";
 let playerSign = "X"; 
 let runBot = true; 
-
 function clickedBox(element){
     if(players.classList.contains("player")){
         playerSign = "O"; 
@@ -48,7 +45,6 @@ function clickedBox(element){
         bot(runBot);
     }, randomTimeDelay); 
 }
-
 function bot(){
     let array = []; 
     if(runBot){
@@ -77,7 +73,6 @@ function bot(){
         playerSign = "X"; 
     }
 }
-
 function getIdVal(classname){
     return document.querySelector(".box" + classname).id; 
 }
@@ -106,7 +101,6 @@ function selectWinner(){
             wonText.textContent = "Match has been drawn!"; 
     }
 }
-
 replayBtn.onclick = ()=>{
     window.location.reload(); 
 }
